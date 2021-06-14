@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageButton
+                android:id="@+id/mainInfoBt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="15dp"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/info"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:orientation="vertical">
+
+                <Button
+                        android:id="@+id/mainSendBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border"
+                        android:paddingLeft="60dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="60dp"
+                        android:paddingBottom="20dp"
+                        android:text="Send"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <Button
+                        android:id="@+id/mainRecBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border"
+                        android:paddingLeft="60dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="60dp"
+                        android:paddingBottom="20dp"
+                        android:text="Receive"/>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

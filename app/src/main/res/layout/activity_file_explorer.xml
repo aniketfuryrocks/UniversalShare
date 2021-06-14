@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal">
+
+                <ImageButton
+                        android:id="@+id/FileExpBackBt"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:layout_margin="3dp"
+                        app:srcCompat="@drawable/back"/>
+
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageButton
+                            android:id="@+id/FileExpSend"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/send"/>
+
+                    <TextView
+                            android:id="@+id/FileExpSendCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/notification"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="#ffff"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"/>
+
+                <HorizontalScrollView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:id="@+id/FileExpStorageCont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpImageBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/image"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Images"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpVideoBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/video"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Videos"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpMusicBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/music"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Music"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpAppsBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/apps"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Apps"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpDownBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/download"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Downloads"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <LinearLayout
+                        android:id="@+id/FileExpAllFilesBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageButton
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:background="@drawable/button_border"
+                            android:clickable="false"
+                            android:padding="20dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/hdd"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="Root Dir"/>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/FileExpPopUpCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:visibility="invisible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
